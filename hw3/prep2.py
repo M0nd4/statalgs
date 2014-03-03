@@ -1,3 +1,4 @@
+
 import os, random
 
 filename = 'disk_configuration.txt'
