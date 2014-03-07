@@ -1,6 +1,7 @@
 ## Modify the algorithm for periodic boundary conditions. Run this algorithm for four disks. Attention: there are no walls and no more wall collisions. Use the modulo operator discussed in this homework's introductory paragraph to ensure that, after each accepted move, x and y positions of each disk are folded back into the interval 0.0 <= x <
 import random
 import pylab
+import math
 
 def show_conf(L, sigma, title, fname):
     pylab.axes()
@@ -33,5 +34,6 @@ for steps in range(n_steps):
     if (min_dist > 2.0 * sigma):
         a[:] = b
 print L
+
 show_conf(L, sigma, 'Markov Disks with Periodic Boundaries', 'markov_periodic.png')
 
