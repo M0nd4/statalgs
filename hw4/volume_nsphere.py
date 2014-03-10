@@ -23,3 +23,8 @@ pyplot.ylabel('Volume')
 
 pyplot.savefig('nsphere-vol-vs-dim.png')
 pyplot.show()
+
+# values for Vol1_s(5), Vol1_s(20), Vol1_s(200)
+Vol1_s(5)
+Vol1_s(20)
+Vol1_s(200)
