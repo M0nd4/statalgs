@@ -1,4 +1,6 @@
-import math, random
+import math
+import random
+
 
 def rho_free(x, y, beta):    # free off-diagonal density matrix
     return math.exp(-(x - y) ** 2 / (2.0 * beta)) 
@@ -21,4 +23,4 @@ for step in range(n_steps):
                    math.exp(-0.5 * dtau * x_new ** 2))
     if random.uniform(0.0, 1.0) < new_weight / old_weight:
         x[k] = x_new
-    print x
+print x
